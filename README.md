@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nxapi-mongodb
+> Next API con MongoDB y Swagger para documentación
 
-## Getting Started
+REST API muy básica con MongoDB para la persistencia de datos.
 
-First, run the development server:
+- Persistencia de datos en [MongoDB Atlas](https://www.mongodb.com/atlas/database). 
+- Despliegue en [Vercel](https://nxapi-mongodb.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Especificación OpenAPI
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- La especificación de la API REST según OpenAPI 3.0 está disponible en **[public/swagger.json](public/swagger.json)**
+- La página que muestra la documentación de la API está disponible en **[src/app/docs/page.js](src/app/docs/page.js)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Generar documentación de la API
 
-## Learn More
+Para generar la documentación he usado **[swagger](https://swagger.io/)** mediante el paquete `swagger-ui-react`. La forma más entendible y más simple, que requiere menos instalación de paquetes, es la que he encontrado en los siguientes recursos:
 
-To learn more about Next.js, take a look at the following resources:
+- [Vídeo](https://youtube.com/watch?v=YZ99SU0__jc)
+- [Código fuente](https://github.com/developerarif55/next-js-swagger-doc)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
