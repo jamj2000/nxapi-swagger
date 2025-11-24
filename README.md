@@ -14,8 +14,11 @@ REST API muy básica con MongoDB para la persistencia de datos.
 
 ## Generar documentación de la API
 
-Para generar la documentación he usado **[swagger](https://swagger.io/)** mediante el paquete `swagger-ui-react`. La forma más entendible y más simple, que requiere menos instalación de paquetes, es la que he encontrado en los siguientes recursos:
+Para generar la documentación he usado **[swagger](https://swagger.io/)** mediante el paquete **`swagger-ui-dist`**. La forma más entendible y más simple, que requiere menos instalación de paquetes, es la que he encontrado en los siguientes recursos:
 
 - [Vídeo](https://youtube.com/watch?v=YZ99SU0__jc)
 - [Código fuente](https://github.com/developerarif55/next-js-swagger-doc)
 
+> [!NOTE]
+>
+> En estos recursos se hace uso de `swagger-ui-react`, lo cual provoca un warning en Next.js. Debe usarse en su lugar `swagger-ui-dist`.

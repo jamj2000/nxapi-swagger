@@ -32,7 +32,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/CreateUserDto"
+                                "$ref": "#/components/schemas/UserPayload"
                             }
                         }
                     }
@@ -100,7 +100,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/UpdateUserDto"
+                                "$ref": "#/components/schemas/UserPayload"
                             }
                         }
                     }
@@ -165,7 +165,7 @@
                     "edad"
                 ]
             },
-            "CreateUserDto": {
+            "UserPayload": {
                 "type": "object",
                 "properties": {
                     "nombre": {
@@ -179,21 +179,6 @@
                     "nombre",
                     "edad"
                 ]
-            },
-            "UpdateUserDto": {
-                "type": "object",
-                "properties": {
-                    "nombre": {
-                        "type": "string"
-                    },
-                    "edad": {
-                        "type": "integer"
-                    },
-                    "required": [
-                        "nombre",
-                        "edad"
-                    ]
-                }
             }
         }
     }
