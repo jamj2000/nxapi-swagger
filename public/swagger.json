@@ -6,13 +6,6 @@
         "version": "1.0.0"
     },
     "components": {
-        "securitySchemes": {
-            "bearerAuth": {
-                "type": "http",
-                "scheme": "bearer",
-                "bearerFormat": "JWT"
-            }
-        },
         "schemas": {
             "User": {
                 "type": "object",
@@ -84,11 +77,6 @@
                 "tags": [
                     "Users"
                 ],
-                "security": [
-                    {
-                        "bearerAuth": []
-                    }
-                ],
                 "requestBody": {
                     "required": true,
                     "content": {
@@ -153,11 +141,6 @@
                 "tags": [
                     "Users"
                 ],
-                "security": [
-                    {
-                        "bearerAuth": []
-                    }
-                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -198,11 +181,6 @@
                 "summary": "Eliminar usuario con ID",
                 "tags": [
                     "Users"
-                ],
-                "security": [
-                    {
-                        "bearerAuth": []
-                    }
                 ],
                 "parameters": [
                     {
